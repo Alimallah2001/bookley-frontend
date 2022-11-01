@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+  
+    width: 100%;
+    height: auto;
+}
+h1,h2,h4{
+        font-family: "Arial Black" ,Gadget,sans-serif;
+}
+
+
+
+.navbar{
+    background-color: blue;
+    height: 4rem;
+}
+hr{
+    width: 8rem;
+    height: 0.1rem;
+    background-color: black;
+}
+.top p{
+    color: rgb(29, 33, 48,1);
+}
+.top{
+    display: flex;
+    flex-direction: row;  
+    background-color: rgb(151, 180, 170); 
+}
+.leftTop{
+    flex: 1;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+
+}
+.leftTop h1{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+.paragraph{
+    width: 79%;
+    padding-top: 1rem;
+}
+.footerSocialLinks{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    width: 33%;
+}
+
+.rightTop{
+    flex: 1;
+    padding: 1rem;
+}
+.rightTop h2{
+    font-weight :2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.4rem;
+}
+.rightTop hr{
+    width: 19rem;
+   
+}
+.branch{
+    display: flex;
+    padding-top: 2rem;
+}
+.branch-1{
+    flex: 1;
+}
+.branch-2{
+    flex: 1;
+}
+li{
+    display: inline-block;
+    padding: 1.5rem 2rem 1.5rem 0rem;
+}
+.middle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+}
+.leftMiddle  { 
+    display: flex;
+    flex-direction: column;
+    flex:1; 
+   align-items: flex-end;
+   margin: 2rem;
+}
+.rightMiddle{
+   
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    align-items: flex-start;
+    margin: 2rem;
+}
+.middle input{
+        
+        border-style: solid;
+       border-color: black;
+        border-width: 0rem 0rem 0.1rem 0rem;
+        width: 17rem;
+        height: 1.3rem;
+        margin: 1rem 0rem 1rem 0rem;
+}
+.messages{     
+        margin-left: 27% ;
+}
+textarea{
+    resize: none;
+    width: 60%;
+    height: 7rem;
+}
+.button{
+        margin: 2rem 0rem 4rem 44%;
+        width: 9rem;
+        height: 2rem;
+        text-align: center;
+        background-color: green;
+        border-radius: 1rem;
+        color: aliceblue;
+}
+
+
+
+
+
+
+
