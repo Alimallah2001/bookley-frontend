@@ -14,7 +14,7 @@ h1,h2,h4{
 
 
 .navbar{
-    background-color: blue;
+    
     height: 4rem;
 }
 hr{
@@ -28,7 +28,7 @@ hr{
 .top{
     display: flex;
     flex-direction: row;  
-    background-color: rgb(151, 180, 170); 
+    background-color:  #70C174; 
 }
 .leftTop{
     flex: 1;
@@ -104,12 +104,14 @@ li{
 }
 .middle input{
         
-        border-style: solid;
+      border-style: solid;
        border-color: black;
         border-width: 0rem 0rem 0.1rem 0rem;
+  
         width: 17rem;
         height: 1.3rem;
         margin: 1rem 0rem 1rem 0rem;
+
 }
 .messages{     
         margin-left: 27% ;
@@ -124,7 +126,8 @@ textarea{
         width: 9rem;
         height: 2rem;
         text-align: center;
-        background-color: green;
+        background-color: #70C174;
+        border:0;
         border-radius: 1rem;
         color: aliceblue;
 }
