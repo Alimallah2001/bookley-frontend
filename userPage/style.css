@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    height: 4rem;
+    /* background-color: blueviolet; */
+  }
+  .top{
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            height: fit-content; 
+            text-align: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+
+  }
+  img{
+        
+        width: 6rem;
+        height: 5rem;
+        border-radius: 50%;
+       margin-bottom: 1rem;
+      }
+.infoProfileUser{
+                 margin: 2rem;
+                               
+}
+h3{
+    margin-bottom: 0.3rem;
+}
+button{
+        width: 5rem;
+        height: 2rem;
+        margin-top: 0.3rem;
+        /* background-color: green; */
+        border-color: grey;
+}
