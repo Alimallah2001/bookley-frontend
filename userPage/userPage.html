@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,39 +8,614 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="navbar"></div>
+    <div class="navBar">
+        <div class="navLogoContainer">
+            <img src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666891741/ESA-Bookley/Bookley_logo_1_m6ftrt.png"
+                alt="" class="navLogo" />
+        </div>
+        <div class="navLinks">
+            <a href="/LandingPage/" class="navLink active">Home</a>
+            <a href="#" class="navLink">About</a>
+            <a href="#" class="navLink">Categories</a>
+            <a href="#" class="navLink">Contact</a>
+            <div class="dropdownAccountMenu">
+                <div class="accountAvatar">IB</div>
+                <div class="accountMenu">
+                    <a href="#" class="accountMenuLink">@isaacbahsoun</a>
+                    <a href="#" class="accountMenuLink">List a book</a>
+                    <a href="#" class="accountMenuLink">Saved</a>
+                    <a href="#" class="accountMenuLink">Transactions</a>
+                    <a href="#" class="accountMenuLink">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="top">
-        <div class="infoProfileUser">
-            <img src="C:\Users\user\Pictures\Wallpapers4K\2048x1536 Anime Naruto.jpg" alt="img">
-            <h3>Ali Mallah</h3>
-            <h5>@ali_mallah</h5>
-            <p>Member since March 27,2022</p>
+        <div class="topLeft">
+            <div class="infoProfileUser">
+                <img src="C:\Users\user\Pictures\Wallpapers4K\2048x1536 Anime Naruto.jpg" alt="img">
+                <h3>Ali Mallah</h3>
+                <h5>@ali_mallah</h5>
+                <p>Member since March 27,2022</p>
+            </div>
         </div>
-        <div class="infoProfileUser">
-            <h3>Score</h3>
-            <p>1250</p>
-        </div>
-        <div class="infoProfileUser">
-            <h3>Accumilated score</h3>
-            <p>3490</p>
-        </div>
-        <div class="infoProfileUser">
-            <h3>Books Listed</h3>
-            <p>14</p>
-        </div>
-        <div class="infoProfileUser">
-            <h3>Books bought</h3>
-            <p>9</p>
-        </div>
-        <div class="infoProfileUser">
-            <button>Edit Profile</button>
+        <div class="topRight">
+            <div class="infoRight-1">
+                <div class="infoProfileUser">
+                    <h3>Score</h3>
+                    <p>1250</p>
+                </div>
+                <div class="infoProfileUser">
+                    <h3>Accumilated score</h3>
+                    <p>3490</p>
+                </div>
+            </div>
+            <div class="infoRight-2">
+                <div class="infoProfileUser">
+                    <h3>Books Listed</h3>
+                    <p>14</p>
+                </div>
+                <div class="infoProfileUser">
+                    <h3>Books bought</h3>
+                    <p>9</p>
+                </div>
+            </div>
+            <div class="infoProfileUser">
+                <button class="myPrimaryBtn">Edit Profile</button>
+            </div>
         </div>
     </div>
     <div class="middle">
-       
+        <div class="middleListed">
+            <div class="titleCardListed">
+                <select name="currently" id="currently">
+                    <option>Currently</option>
+                </select>
+                <h4>Listed by</h4>
+                <h5>@ali_mallah</h5>
+            </div>
+             <div class="myCardsContainer">
+        <div class="myCardsContainerTitleSection">
+          <hr class="myTitleLine" />
+          <h5 class="myCardsContainerTitle">Recently Listed</h5>
+        </div>
+        <div class="myCardsCenteredDiv">
+            <div class="myCardsWrapper">
+                <div class="myBookCardContainer">
+                    <div class="myBookCardImgContainer">
+                      <img
+                        src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666954510/ESA-Bookley/Books/51S9hxaZfdL._SX324_BO1_204_203_200__pex0dh.jpg"
+                        alt="book"
+                        class="bookCardImg"
+                      />
+                    </div>
+                    <div class="myBookCardInfoContainer">
+                      <!-- <p class="myBookCardCategory">Novel</p> -->
+                      <h5 class="myBookCardTitle">
+                        The Forty Rules of LoveThe Forty Rules of Love
+                      </h5>
+                      <!-- <h6 class="myBookCardAuthor"><i>Elif Shafak</i></h6> <p class="myBookCardPoints">354 pts.</p> -->
+                    </div>
+                    <div class="myBookCardBot">
+                      <div class="bookCardAuthorContainer">
+                        <span class="cardBotTag"> AUTHOR </span>
+                        <i>Elif Shafak</i>
+                      </div>
+                      <div class="bookCardCatContainer">
+                        <span class="cardBotTag"> CATEGORY </span>
+                        NOVEL
+                      </div>
+                      <div class="bookCardPtsContainer">
+                        <span class="cardBotTag"> PTS </span>
+                        345
+                      </div>
+                    </div>
+                  </div>
+              <div class="myBookCardContainer">
+                <div class="myBookCardImgContainer">
+                  <img
+                    src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666954510/ESA-Bookley/Books/51S9hxaZfdL._SX324_BO1_204_203_200__pex0dh.jpg"
+                    alt="book"
+                    class="bookCardImg"
+                  />
+                </div>
+                <div class="myBookCardInfoContainer">
+                  <!-- <p class="myBookCardCategory">Novel</p> -->
+                  <h5 class="myBookCardTitle">
+                    The Forty Rules of LoveThe Forty Rules of Love
+                  </h5>
+                  <!-- <h6 class="myBookCardAuthor"><i>Elif Shafak</i></h6> <p class="myBookCardPoints">354 pts.</p> -->
+                </div>
+                <div class="myBookCardBot">
+                  <div class="bookCardAuthorContainer">
+                    <span class="cardBotTag"> AUTHOR </span>
+                    <i>Elif Shafak</i>
+                  </div>
+                  <div class="bookCardCatContainer">
+                    <span class="cardBotTag"> CATEGORY </span>
+                    NOVEL
+                  </div>
+                  <div class="bookCardPtsContainer">
+                    <span class="cardBotTag"> PTS </span>
+                    345
+                  </div>
+                </div>
+              </div>
+              <div class="myBookCardContainer">
+                <div class="myBookCardImgContainer">
+                  <img
+                    src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666954510/ESA-Bookley/Books/51S9hxaZfdL._SX324_BO1_204_203_200__pex0dh.jpg"
+                    alt="book"
+                    class="bookCardImg"
+                  />
+                </div>
+                <div class="myBookCardInfoContainer">
+                  <!-- <p class="myBookCardCategory">Novel</p> -->
+                  <h5 class="myBookCardTitle">
+                    The Forty Rules of LoveThe Forty Rules of Love
+                  </h5>
+                  <!-- <h6 class="myBookCardAuthor"><i>Elif Shafak</i></h6> <p class="myBookCardPoints">354 pts.</p> -->
+                </div>
+                <div class="myBookCardBot">
+                  <div class="bookCardAuthorContainer">
+                    <span class="cardBotTag"> AUTHOR </span>
+                    <i>Elif Shafak</i>
+                  </div>
+                  <div class="bookCardCatContainer">
+                    <span class="cardBotTag"> CATEGORY </span>
+                    NOVEL
+                  </div>
+                  <div class="bookCardPtsContainer">
+                    <span class="cardBotTag"> PTS </span>
+                    345
+                  </div>
+                </div>
+                <!-- <div class="myBookCardListingInfo">
+                    
+                      <div class="myBookCardListingInfoRight">
+                       
+                      </div>
+                    </div> -->
+              </div>
+              <div class="myBookCardContainer">
+                <div class="myBookCardImgContainer">
+                  <img
+                    src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666954510/ESA-Bookley/Books/51S9hxaZfdL._SX324_BO1_204_203_200__pex0dh.jpg"
+                    alt="book"
+                    class="bookCardImg"
+                  />
+                </div>
+                <div class="myBookCardInfoContainer">
+                  <!-- <p class="myBookCardCategory">Novel</p> -->
+                  <h5 class="myBookCardTitle">
+                    The Forty Rules of LoveThe Forty Rules of Love
+                  </h5>
+                  <!-- <h6 class="myBookCardAuthor"><i>Elif Shafak</i></h6> <p class="myBookCardPoints">354 pts.</p> -->
+                </div>
+                <div class="myBookCardBot">
+                  <div class="bookCardAuthorContainer">
+                    <span class="cardBotTag"> AUTHOR </span>
+                    <i>Elif Shafak</i>
+                  </div>
+                  <div class="bookCardCatContainer">
+                    <span class="cardBotTag"> CATEGORY </span>
+                    NOVEL
+                  </div>
+                  <div class="bookCardPtsContainer">
+                    <span class="cardBotTag"> PTS </span>
+                    345
+                  </div>
+                </div>
+                <!-- <div class="myBookCardListingInfo">
+                    
+                      <div class="myBookCardListingInfoRight">
+                       
+                      </div>
+                    </div> -->
+              </div>
+              <div class="myBookCardContainer">
+                <div class="myBookCardImgContainer">
+                  <img
+                    src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666954510/ESA-Bookley/Books/51S9hxaZfdL._SX324_BO1_204_203_200__pex0dh.jpg"
+                    alt="book"
+                    class="bookCardImg"
+                  />
+                </div>
+                <div class="myBookCardInfoContainer">
+                  <!-- <p class="myBookCardCategory">Novel</p> -->
+                  <h5 class="myBookCardTitle">
+                    The Forty Rules of LoveThe Forty Rules of Love
+                  </h5>
+                  <!-- <h6 class="myBookCardAuthor"><i>Elif Shafak</i></h6> <p class="myBookCardPoints">354 pts.</p> -->
+                </div>
+                <div class="myBookCardBot">
+                  <div class="bookCardAuthorContainer">
+                    <span class="cardBotTag"> AUTHOR </span>
+                    <i>Elif Shafak</i>
+                  </div>
+                  <div class="bookCardCatContainer">
+                    <span class="cardBotTag"> CATEGORY </span>
+                    NOVEL
+                  </div>
+                  <div class="bookCardPtsContainer">
+                    <span class="cardBotTag"> PTS </span>
+                    345
+                  </div>
+                </div>
+                <!-- <div class="myBookCardListingInfo">
+                    
+                      <div class="myBookCardListingInfoRight">
+                       
+                      </div>
+                    </div> -->
+              </div>
+              <div class="myBookCardContainer">
+                <div class="myBookCardImgContainer">
+                  <img
+                    src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666954510/ESA-Bookley/Books/51S9hxaZfdL._SX324_BO1_204_203_200__pex0dh.jpg"
+                    alt="book"
+                    class="bookCardImg"
+                  />
+                </div>
+                <div class="myBookCardInfoContainer">
+                  <!-- <p class="myBookCardCategory">Novel</p> -->
+                  <h5 class="myBookCardTitle">
+                    The Forty Rules of LoveThe Forty Rules of Love
+                  </h5>
+                  <!-- <h6 class="myBookCardAuthor"><i>Elif Shafak</i></h6> <p class="myBookCardPoints">354 pts.</p> -->
+                </div>
+                <div class="myBookCardBot">
+                  <div class="bookCardAuthorContainer">
+                    <span class="cardBotTag"> AUTHOR </span>
+                    <i>Elif Shafak</i>
+                  </div>
+                  <div class="bookCardCatContainer">
+                    <span class="cardBotTag"> CATEGORY </span>
+                    NOVEL
+                  </div>
+                  <div class="bookCardPtsContainer">
+                    <span class="cardBotTag"> PTS </span>
+                    345
+                  </div>
+                </div>
+                <!-- <div class="myBookCardListingInfo">
+                    
+                      <div class="myBookCardListingInfoRight">
+                       
+                      </div>
+                    </div> -->
+              </div>
+              <div class="myBookCardContainer">
+                <div class="myBookCardImgContainer">
+                  <img
+                    src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666954510/ESA-Bookley/Books/51S9hxaZfdL._SX324_BO1_204_203_200__pex0dh.jpg"
+                    alt="book"
+                    class="bookCardImg"
+                  />
+                </div>
+                <div class="myBookCardInfoContainer">
+                  <!-- <p class="myBookCardCategory">Novel</p> -->
+                  <h5 class="myBookCardTitle">
+                    The Forty Rules of LoveThe Forty Rules of Love
+                  </h5>
+                  <!-- <h6 class="myBookCardAuthor"><i>Elif Shafak</i></h6> <p class="myBookCardPoints">354 pts.</p> -->
+                </div>
+                <div class="myBookCardBot">
+                  <div class="bookCardAuthorContainer">
+                    <span class="cardBotTag"> AUTHOR </span>
+                    <i>Elif Shafak</i>
+                  </div>
+                  <div class="bookCardCatContainer">
+                    <span class="cardBotTag"> CATEGORY </span>
+                    NOVEL
+                  </div>
+                  <div class="bookCardPtsContainer">
+                    <span class="cardBotTag"> PTS </span>
+                    345
+                  </div>
+                </div>
+                <!-- <div class="myBookCardListingInfo">
+                    
+                      <div class="myBookCardListingInfoRight">
+                       
+                      </div>
+                    </div> -->
+              </div>
+            </div>
+        </div>
+        
+        <div class="middleLiked">
+            <div class="titleCardLiked">
+                <h4>Liked by</h4>
+                <h5>@ali_mallah</h5>
+            </div>
+             <div class="myCardsContainer">
+        <div class="myCardsContainerTitleSection">
+          <hr class="myTitleLine" />
+          <h5 class="myCardsContainerTitle">Recently Liked</h5>
+        </div>
+
+        <div class="myCardsWrapper">
+            <div class="myBookCardContainer">
+                <div class="myBookCardImgContainer">
+                  <img
+                    src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666954510/ESA-Bookley/Books/51S9hxaZfdL._SX324_BO1_204_203_200__pex0dh.jpg"
+                    alt="book"
+                    class="bookCardImg"
+                  />
+                </div>
+                <div class="myBookCardInfoContainer">
+                  <!-- <p class="myBookCardCategory">Novel</p> -->
+                  <h5 class="myBookCardTitle">
+                    The Forty Rules of LoveThe Forty Rules of Love
+                  </h5>
+                  <!-- <h6 class="myBookCardAuthor"><i>Elif Shafak</i></h6> <p class="myBookCardPoints">354 pts.</p> -->
+                </div>
+                <div class="myBookCardBot">
+                  <div class="bookCardAuthorContainer">
+                    <span class="cardBotTag"> AUTHOR </span>
+                    <i>Elif Shafak</i>
+                  </div>
+                  <div class="bookCardCatContainer">
+                    <span class="cardBotTag"> CATEGORY </span>
+                    NOVEL
+                  </div>
+                  <div class="bookCardPtsContainer">
+                    <span class="cardBotTag"> PTS </span>
+                    345
+                  </div>
+                </div>
+              </div>
+          <div class="myBookCardContainer">
+            <div class="myBookCardImgContainer">
+              <img
+                src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666954510/ESA-Bookley/Books/51S9hxaZfdL._SX324_BO1_204_203_200__pex0dh.jpg"
+                alt="book"
+                class="bookCardImg"
+              />
+            </div>
+            <div class="myBookCardInfoContainer">
+              <!-- <p class="myBookCardCategory">Novel</p> -->
+              <h5 class="myBookCardTitle">
+                The Forty Rules of LoveThe Forty Rules of Love
+              </h5>
+              <!-- <h6 class="myBookCardAuthor"><i>Elif Shafak</i></h6> <p class="myBookCardPoints">354 pts.</p> -->
+            </div>
+            <div class="myBookCardBot">
+              <div class="bookCardAuthorContainer">
+                <span class="cardBotTag"> AUTHOR </span>
+                <i>Elif Shafak</i>
+              </div>
+              <div class="bookCardCatContainer">
+                <span class="cardBotTag"> CATEGORY </span>
+                NOVEL
+              </div>
+              <div class="bookCardPtsContainer">
+                <span class="cardBotTag"> PTS </span>
+                345
+              </div>
+            </div>
+          </div>
+          <div class="myBookCardContainer">
+            <div class="myBookCardImgContainer">
+              <img
+                src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666954510/ESA-Bookley/Books/51S9hxaZfdL._SX324_BO1_204_203_200__pex0dh.jpg"
+                alt="book"
+                class="bookCardImg"
+              />
+            </div>
+            <div class="myBookCardInfoContainer">
+              <!-- <p class="myBookCardCategory">Novel</p> -->
+              <h5 class="myBookCardTitle">
+                The Forty Rules of LoveThe Forty Rules of Love
+              </h5>
+              <!-- <h6 class="myBookCardAuthor"><i>Elif Shafak</i></h6> <p class="myBookCardPoints">354 pts.</p> -->
+            </div>
+            <div class="myBookCardBot">
+              <div class="bookCardAuthorContainer">
+                <span class="cardBotTag"> AUTHOR </span>
+                <i>Elif Shafak</i>
+              </div>
+              <div class="bookCardCatContainer">
+                <span class="cardBotTag"> CATEGORY </span>
+                NOVEL
+              </div>
+              <div class="bookCardPtsContainer">
+                <span class="cardBotTag"> PTS </span>
+                345
+              </div>
+            </div>
+            <!-- <div class="myBookCardListingInfo">
+                
+                  <div class="myBookCardListingInfoRight">
+                   
+                  </div>
+                </div> -->
+          </div>
+          <div class="myBookCardContainer">
+            <div class="myBookCardImgContainer">
+              <img
+                src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666954510/ESA-Bookley/Books/51S9hxaZfdL._SX324_BO1_204_203_200__pex0dh.jpg"
+                alt="book"
+                class="bookCardImg"
+              />
+            </div>
+            <div class="myBookCardInfoContainer">
+              <!-- <p class="myBookCardCategory">Novel</p> -->
+              <h5 class="myBookCardTitle">
+                The Forty Rules of LoveThe Forty Rules of Love
+              </h5>
+              <!-- <h6 class="myBookCardAuthor"><i>Elif Shafak</i></h6> <p class="myBookCardPoints">354 pts.</p> -->
+            </div>
+            <div class="myBookCardBot">
+              <div class="bookCardAuthorContainer">
+                <span class="cardBotTag"> AUTHOR </span>
+                <i>Elif Shafak</i>
+              </div>
+              <div class="bookCardCatContainer">
+                <span class="cardBotTag"> CATEGORY </span>
+                NOVEL
+              </div>
+              <div class="bookCardPtsContainer">
+                <span class="cardBotTag"> PTS </span>
+                345
+              </div>
+            </div>
+            <!-- <div class="myBookCardListingInfo">
+                
+                  <div class="myBookCardListingInfoRight">
+                   
+                  </div>
+                </div> -->
+          </div>
+          <div class="myBookCardContainer">
+            <div class="myBookCardImgContainer">
+              <img
+                src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666954510/ESA-Bookley/Books/51S9hxaZfdL._SX324_BO1_204_203_200__pex0dh.jpg"
+                alt="book"
+                class="bookCardImg"
+              />
+            </div>
+            <div class="myBookCardInfoContainer">
+              <!-- <p class="myBookCardCategory">Novel</p> -->
+              <h5 class="myBookCardTitle">
+                The Forty Rules of LoveThe Forty Rules of Love
+              </h5>
+              <!-- <h6 class="myBookCardAuthor"><i>Elif Shafak</i></h6> <p class="myBookCardPoints">354 pts.</p> -->
+            </div>
+            <div class="myBookCardBot">
+              <div class="bookCardAuthorContainer">
+                <span class="cardBotTag"> AUTHOR </span>
+                <i>Elif Shafak</i>
+              </div>
+              <div class="bookCardCatContainer">
+                <span class="cardBotTag"> CATEGORY </span>
+                NOVEL
+              </div>
+              <div class="bookCardPtsContainer">
+                <span class="cardBotTag"> PTS </span>
+                345
+              </div>
+            </div>
+            <!-- <div class="myBookCardListingInfo">
+                
+                  <div class="myBookCardListingInfoRight">
+                   
+                  </div>
+                </div> -->
+          </div>
+          <div class="myBookCardContainer">
+            <div class="myBookCardImgContainer">
+              <img
+                src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666954510/ESA-Bookley/Books/51S9hxaZfdL._SX324_BO1_204_203_200__pex0dh.jpg"
+                alt="book"
+                class="bookCardImg"
+              />
+            </div>
+            <div class="myBookCardInfoContainer">
+              <!-- <p class="myBookCardCategory">Novel</p> -->
+              <h5 class="myBookCardTitle">
+                The Forty Rules of LoveThe Forty Rules of Love
+              </h5>
+              <!-- <h6 class="myBookCardAuthor"><i>Elif Shafak</i></h6> <p class="myBookCardPoints">354 pts.</p> -->
+            </div>
+            <div class="myBookCardBot">
+              <div class="bookCardAuthorContainer">
+                <span class="cardBotTag"> AUTHOR </span>
+                <i>Elif Shafak</i>
+              </div>
+              <div class="bookCardCatContainer">
+                <span class="cardBotTag"> CATEGORY </span>
+                NOVEL
+              </div>
+              <div class="bookCardPtsContainer">
+                <span class="cardBotTag"> PTS </span>
+                345
+              </div>
+            </div>
+            <!-- <div class="myBookCardListingInfo">
+                
+                  <div class="myBookCardListingInfoRight">
+                   
+                  </div>
+                </div> -->
+          </div>
+          <div class="myBookCardContainer">
+            <div class="myBookCardImgContainer">
+              <img
+                src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666954510/ESA-Bookley/Books/51S9hxaZfdL._SX324_BO1_204_203_200__pex0dh.jpg"
+                alt="book"
+                class="bookCardImg"
+              />
+            </div>
+            <div class="myBookCardInfoContainer">
+              <!-- <p class="myBookCardCategory">Novel</p> -->
+              <h5 class="myBookCardTitle">
+                The Forty Rules of LoveThe Forty Rules of Love
+              </h5>
+              <!-- <h6 class="myBookCardAuthor"><i>Elif Shafak</i></h6> <p class="myBookCardPoints">354 pts.</p> -->
+            </div>
+            <div class="myBookCardBot">
+              <div class="bookCardAuthorContainer">
+                <span class="cardBotTag"> AUTHOR </span>
+                <i>Elif Shafak</i>
+              </div>
+              <div class="bookCardCatContainer">
+                <span class="cardBotTag"> CATEGORY </span>
+                NOVEL
+              </div>
+              <div class="bookCardPtsContainer">
+                <span class="cardBotTag"> PTS </span>
+                345
+              </div>
+            </div>
+          </div>
+          </div>
     </div>
-    <div class="bottom"></div>
-    <div class="footer"></div>
+ <!-- footer -->
+ <div class="myFooter">
+    <div class="footerCols">
+      <div class="fcol">
+        <img
+          src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666891741/ESA-Bookley/Bookley_logo_1_m6ftrt.png"
+          alt=""
+          class="footerLogo"
+        />
+        <div class="footerSocialLinks">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="fcol">
+        <h5 class="footerTitle">Pages</h5>
+        <a><h6 class="footerLink">Home</h6></a>
+        <a><h6 class="footerLink">About us</h6></a>
+        <a><h6 class="footerLink">Contact us</h6></a>
+        <a><h6 class="footerLink">Log In / Register</h6></a>
+      </div>
+      <div class="fcol">
+        <h5 class="footerTitle">Books</h5>
+        <a><h6 class="footerLink">Categories</h6></a>
+        <a><h6 class="footerLink">Authors</h6></a>
+        <a><h6 class="footerLink">List a book</h6></a>
+      </div>
+      <div class="fcol">
+        <h5 class="footerTitle">Legal</h5>
+        <a><h6 class="footerLink">Terms</h6></a>
+        <a><h6 class="footerLink">Policy</h6></a>
+      </div>
+    </div>
+    <div class="fRights">
+      <p style="margin-bottom: 0">
+        All rights reserved. Copyright 2022© ESA -- Bookley
+      </p>
+    </div>
+  </div>
 </body>
+
+
 </html>

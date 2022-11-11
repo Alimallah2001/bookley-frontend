@@ -2,38 +2,341 @@
     padding: 0;
     margin: 0;
 }
-.navbar{
-    height: 4rem;
-    /* background-color: blueviolet; */
+:root{
+    --logoGreen: #235327;
+    --primaryGreen: #70C174;
+    --secondaryGreen: #BEF3C0;
+    --tertiaryGreen: #EFF7F2;
+    --primaryDark: #0B0706;
+    --secondaryDark: #1D2130;
+    --tertiaryDark: #525560;
+    --primaryLight: #EBF0F9;
+    --secondaryLight: #fff;
+
+    
+}
+a, a:visited, a:hover, a:active {
+    text-decoration: none !important;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: #ffff;
+    color: var(--logoGreen);
+    padding-left: 00.5rem;
+    padding-right: 00.5rem;
+}
+.navLogoContainer{
+    display: flex;
+    align-items: center;
+}
+
+.navLinks{
+    display: flex;
+    align-items: center;
+    padding-right: 0.25rem;
+    
+}
+.navBar a{
+    font-size: 1.25rem;
+    padding: 1rem;
+    color: var(--logoGreen);
+    transition: all ease-in-out 0.3s;
+}
+/* .navBar .active, .navBar .active:hover {
+    background-color: var(--primaryGreen);
+    color: var(--tertiaryGreen);
+} */
+.navBar a:hover{
+    
+    
+    color: var(--primaryGreen);
+    background-color: var(--tertiaryDark);
+    
+}
+
+.dropdownAccountMenu{
+    /* position: relative;
+    display: inline-block; */
+    overflow: hidden;
+    
+}
+/* .dropdownAccountMenu .accountAvatar{
+    font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+} */
+.accountMenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f980;
+    min-width: 10rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    right: 0;
   }
+  .accountMenu a {
+    float: none;
+    padding: 0.5rem ;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .accountMenu a:hover {
+    /* background-color: var(--tertiaryDark); */
+    color: var(--primaryGreen);
+    background-color: var(--tertiaryDark);
+    
+  }
+  .dropdownAccountMenu:hover .accountMenu,  .accountMenu:hover {
+    display: block;
+    z-index: 3;
+  }
+.accountAvatar{
+    display: flex;
+    height: 2.5rem;
+    width: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 00.5rem;
+    border-radius: 50%;
+    border: var(--logoGreen) dotted ;
+    color: var(--logoGreen);
+    cursor: pointer;
+}
+/* end-navbar */
   .top{
             display: flex;
             flex-direction:row;
-            justify-content: center;
-            height: fit-content; 
+            justify-content: space-between;
             text-align: center;
-            margin-top: 2rem;
+            /* margin-top: 2rem; */
             flex-wrap: wrap;
-
+            padding: 2rem;
+            margin-left: 3rem;
   }
-  img{
+.infoProfileUser img{
         
         width: 6rem;
         height: 5rem;
         border-radius: 50%;
        margin-bottom: 1rem;
+       margin-left: 3rem;
       }
-.infoProfileUser{
-                 margin: 2rem;
-                               
+.topRight{
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
-h3{
+
+.infoRight-1 ,.infoRight-2{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+.infoProfileUser{
+                 flex: 1;
+                 height: 100%;
+                 display: flex; 
+                 flex-direction: column;
+                 justify-content: center;
+}
+.infoProfileUser h3{
     margin-bottom: 0.3rem;
 }
-button{
-        width: 5rem;
-        height: 2rem;
-        margin-top: 0.3rem;
-        /* background-color: green; */
-        border-color: grey;
+.myPrimaryBtn{
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem ;
+    width: fit-content;
+    margin-top: 0.5rem;
+    background-color: var(--primaryLight);
+    color: var(--logoGreen);
+  }
+
+  .myPrimaryBtn:hover{
+    background-color: var(--primaryGreen);
+    color: var(--secondaryLight);
+  }
+.titleCardListed{
+
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 3rem;
+     /* margin-left: 13%;  */
 }
+ .titleCardListed select{
+    font-weight:bold;
+    padding: 0.5rem;
+    margin-right :1rem;
+ }
+
+ .titleCardListed h4{
+    margin-right: 1rem;
+ }
+ /*card*/
+ .myCardsContainer{
+    background-color: var(--primaryGreen);
+    /* color: var(--logoGreen);  */
+    
+    padding-bottom: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  .myCardsContainer:nth-child(even){
+    background-color: #fff;
+    color: var(--primaryGreen);
+  }
+
+  .myCardsContainerTitleSection{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .myTitleLine{
+    width: 8rem;
+    margin: 0 1rem;
+  }
+  .myCardsContainerTitle{
+    margin-bottom: 0;
+  }
+  .myCardsCenteredDiv{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+  }
+  .myCardsWrapper{
+    display: flex;
+    width: fit-content;
+    flex-wrap: wrap;
+    padding-top: 00.1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: flex-start;
+    /* flex-wrap: wrap;*/
+    gap: 2rem;
+    /* overflow-x: scroll; */
+  }
+  .myBookCardContainer{
+    /* background-color: var(--tertiaryGreen); */
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(180%) blur(10px);
+    color: var(--primaryGreen);
+    /* border: 0.1rem solid var(--logoGreen); */
+    padding: 0.5rem;
+    /* position: relative; */
+    /* border-radius: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 18rem;
+    max-height: 18rem;
+    min-width: 12rem;
+    max-width: 12rem;
+    overflow: hidden;
+    box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.6);
+    -moz-box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.6);
+  }
+
+  .myBookCardImgContainer{
+    /* padding-top: 0.25rem; */
+    display: flex;
+    height: 10rem;
+    justify-content: center;
+    transition: all ease-in-out 0.6s;
+  }
+  .bookCardImg{
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .myBookCardImgContainer:hover{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    transform: rotateY(10deg);
+    transform: scale(1.05);
+
+  }
+ 
+  .myBookCardTitle{
+    margin: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    
+  }
+  .myBookCardBot{
+    display: flex;
+    justify-content: space-between;
+    /* position: absolute;
+    bottom: 0; */
+    border-top: 1px solid var(--primaryGreen);
+    font-size: 0.75rem;
+    width: 100%;
+  }
+
+  .bookCardAuthorContainer, .bookCardCatContainer, .bookCardPtsContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  /*liked by*/
+  .titleCardLiked {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3rem;
+    color: #1D2130;
+}
+.titleCardLiked h4{
+    margin-right: 1rem;
+ }
+ /*Footer*/
+ .footerCols{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  .footerSocialLinks{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+  }
+
+  .myFooter{
+    background-color: black;
+    color: var(--secondaryLight);
+  }
+  
+  .fcol{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .footerTitle{
+    margin-bottom: 1rem;
+  }
+  .footerLink{
+    cursor: pointer;
+  }
+  .footerLink:hover{
+    color: var(--primaryGreen);
+  }
+  .fRights{
+    width: 100%;
+    text-align: center;
+  }
