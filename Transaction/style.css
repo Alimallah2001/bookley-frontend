@@ -1,0 +1,189 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* transition: all ease-in-out 0.5s; */
+}
+
+:root{
+    --logoGreen: #235327;
+    --primaryGreen: #70C174;
+    --secondaryGreen: #BEF3C0;
+    --tertiaryGreen: #EFF7F2;
+    --primaryDark: #0B0706;
+    --secondaryDark: #1D2130;
+    --tertiaryDark: #525560;
+    --primaryLight: #EBF0F9;
+    /* --secondaryLight: #E5E5E5; */
+    --secondaryLight: #fff;
+
+    
+}
+a, a:visited, a:hover, a:active {
+    text-decoration: none !important;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: #ffff;
+    color: var(--logoGreen);
+    padding-left: 00.5rem;
+    padding-right: 00.5rem;
+}
+.navLogoContainer{
+    display: flex;
+    align-items: center;
+    /* padding: 0.5rem; */
+}
+/* .navLogo{
+    max-width: 50%;
+} */
+.navLinks{
+    display: flex;
+    align-items: center;
+    padding-right: 0.25rem;
+    
+}
+.navBar a{
+    font-size: 1.25rem;
+    padding: 1rem;
+    color: var(--logoGreen);
+    transition: all ease-in-out 0.3s;
+}
+/* .navBar .active, .navBar .active:hover {
+    background-color: var(--primaryGreen);
+    color: var(--tertiaryGreen);
+} */
+.navBar a:hover{
+    
+    
+    color: var(--primaryGreen);
+    background-color: var(--tertiaryDark);
+    
+}
+
+.dropdownAccountMenu{
+    /* position: relative;
+    display: inline-block; */
+    overflow: hidden;
+    
+}
+/* .dropdownAccountMenu .accountAvatar{
+    font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+} */
+.accountMenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f980;
+    min-width: 10rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    right: 0;
+  }
+  .accountMenu a {
+    float: none;
+    padding: 0.5rem ;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .accountMenu a:hover {
+    /* background-color: var(--tertiaryDark); */
+    color: var(--primaryGreen);
+    background-color: var(--tertiaryDark);
+    
+  }
+  .dropdownAccountMenu:hover .accountMenu,  .accountMenu:hover {
+    display: block;
+    z-index: 3;
+  }
+.accountAvatar{
+    display: flex;
+    height: 2.5rem;
+    width: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 00.5rem;
+    border-radius: 50%;
+    border: var(--logoGreen) dotted ;
+    color: var(--logoGreen);
+    cursor: pointer;
+    
+}
+/*End navbar*/
+.topTransaction{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--primaryGreen);
+    align-items: center;
+}
+
+.topTransactionLeft{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+.topTransactionRight{
+    display: flex;
+    flex-direction: column;
+}
+.topTransactionLeft h4,h1{
+    padding: 1rem;
+}
+.topTransactionRight p{
+    padding: 1rem;
+}
+.topTransactionLeft img{
+          width: 6rem;
+          height: 5rem;
+          border-radius: 50%;
+         margin-bottom: 1rem;
+         margin-left: 3rem;
+         
+        }
+hr{
+    width: 8rem;
+    margin: 0 1rem;
+    height: 0.3rem;
+    background-color: #0B0706;
+    /* background-color: aqua; */
+}
+.titleOfTable{
+    display: inline-flex;
+   align-items: center;
+   font-weight: bold;
+   margin-top: 1rem;
+}
+table,td,th{
+    border: 2px solid var(--secondaryLight);
+    border-collapse: collapse;
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+}
+table{
+    width: 80%;
+}
+th{
+    background-color: var(--primaryGreen);
+    color: white;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+td{
+    border: none;
+}
+ 
