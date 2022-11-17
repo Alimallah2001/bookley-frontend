@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tansactions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link  href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+      }
+    </style>
     <link rel="stylesheet" href="style.css">
-<script>
-function myFunction(){
-    const element=document.getElementsByClassName
-}
-    </script>
+  <script  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
 </head>
 <body>
     <div class="navBar">
@@ -44,40 +47,40 @@ function myFunction(){
       </div>
 
       <div class="container">
-        <div class="topTransaction">
-        <div class="topTransactionLeft">
-            <img src="C:\Users\user\Pictures\Wallpapers4K\2048x1536 Anime Naruto.jpg" alt="img">
-            <h1>Alimallah</h1>
-            <h1>12.300 pts</h1>
-        </div>
-        <div class="topTransactionRight">
-            <p>current 11.200 pts</p>
-            <p>In pay 1.100 pts</p>
-            
-        </div>
-        </div>
-        <div class="middleTransaction">
-            <div class="titleOfTable">  <hr>
+      
+        <div class="top">
+            <div class="titleOfTable">  
+                <hr>
                 <p>Transactions History</p>
+             
             </div>
+            <div class="current">
+                
+                <p>current score : 200 pts</p>
+            </div>
+            <div class="payed">
+                <p>Total payed : 200 pts</p>
+            </div>
+        </div>
             <table>
                 <tr>
                     <th>ID</th>
                     <th>Date</th>
                     <th>Type</th>
                     <th>Amount</th>
+                   
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>8/11/2022</td>
-                    <td class="type">Credit</td>
-                    <td class="amount">100 pts</td>
+                    <td class="type" >Credit</td>
+                    <td class="amount">600 pts</td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>8/11/2022</td>
-                    <td class="type">Payed</td>
-                    <td class="amount">400 pts</td>
+                    <td class="type" >Payed</td>
+                    <td class="amount"> 400 pts</td>
                 </tr>
                 
                 <tr>
@@ -89,18 +92,115 @@ function myFunction(){
                 <tr>
                     <td>4</td>
                     <td>8/11/2022</td>
-                    <td class="type">Payed</td>
+                    <td class="type" >Payed</td>
                     <td class="amount">100 pts</td>
                 </tr>
                 <tr>
                     <td>5</td>
                     <td>8/11/2022</td>
                     <td class="type">Payed</td>
-                    <td class="amount">100 pts</td>
+                    <td class="amount" >100 pts</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>8/11/2022</td>
+                    <td class="type">Credit</td>
+                    <td class="amount" >400 pts</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8/11/2022</td>
+                    <td class="type">Payed</td>
+                    <td class="amount" >37 pts</td>
                 </tr>
                 
             </table>
         </div>
-      </div>
-</body>
+        <p class="titleOfChart">Current Score Diagram</p>
+        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+        <div class="myFooter">
+            <div class="footerCols">
+              <div class="fcol">
+                <img
+                  src="https://res.cloudinary.com/df6hxb2wx/image/upload/v1666891741/ESA-Bookley/Bookley_logo_1_m6ftrt.png"
+                  alt=""
+                  class="footerLogo"
+                />
+                <div class="footerSocialLinks">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+              </div>
+              <div class="fcol">
+                <h5 class="footerTitle">Pages</h5>
+                <a><h6 class="footerLink">Home</h6></a>
+                <a><h6 class="footerLink">About us</h6></a>
+                <a><h6 class="footerLink">Contact us</h6></a>
+                <a><h6 class="footerLink">Log In / Register</h6></a>
+              </div>
+              <div class="fcol">
+                <h5 class="footerTitle">Books</h5>
+                <a><h6 class="footerLink">Categories</h6></a>
+                <a><h6 class="footerLink">Authors</h6></a>
+                <a><h6 class="footerLink">List a book</h6></a>
+              </div>
+              <div class="fcol">
+                <h5 class="footerTitle">Legal</h5>
+                <a><h6 class="footerLink">Terms</h6></a>
+                <a><h6 class="footerLink">Policy</h6></a>
+              </div>
+            </div>
+            <div class="fRights">
+              <p style="margin-bottom: 0">
+                All rights reserved. Copyright 2022© ESA -- Bookley
+              </p>
+            </div>
+          </div>
+          
+
+         
+      <script>
+        let x=document.getElementsByClassName('type');
+        let y=  document.getElementsByClassName('amount');
+       
+        for(let i=0;i<x.length;i++){
+        
+           if(
+            x[i].innerHTML=="Payed"){
+           y[i].style.color = "red" ;
+           y[i].innerHTML='- '+ y[i].innerHTML;
+         }
+         else{
+            y[i].style.color = "green" ;
+             y[i].innerHTML='+ '+ y[i].innerHTML;
+         }
+        }
+
+        
+        var xValues = ["1/1/2011","1/1/2011","1/1/2011","1/1/2011","1/1/2011","1/1/2011","1/1/2011"];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{ 
+      data: [600,200,332,232,132,532,495],
+      borderColor: "green",
+      fill: false
+    }, ] 
+      
+    
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+
+       
+       
+       
+       </script>
+    </body>
 </html>

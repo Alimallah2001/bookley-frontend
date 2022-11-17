@@ -122,49 +122,48 @@ a, a:visited, a:hover, a:active {
     
 }
 /*End navbar*/
-.topTransaction{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: var(--primaryGreen);
-    align-items: center;
-}
-
-.topTransactionLeft{
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-}
-.topTransactionRight{
-    display: flex;
-    flex-direction: column;
-}
-.topTransactionLeft h4,h1{
-    padding: 1rem;
-}
-.topTransactionRight p{
-    padding: 1rem;
-}
-.topTransactionLeft img{
-          width: 6rem;
-          height: 5rem;
-          border-radius: 50%;
-         margin-bottom: 1rem;
-         margin-left: 3rem;
-         
-        }
 hr{
     width: 8rem;
     margin: 0 1rem;
     height: 0.3rem;
     background-color: #0B0706;
     /* background-color: aqua; */
+ } 
+/* .titleOfTable {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 1rem;
+  width: 40%;
+}
+.top {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 2rem;
+}
+.infoOfUser {
+  justify-content: space-between;
+  font-size: larger;
+  font-weight: bolder;
+}  */
+.top{
+  display: flex;
+  justify-content: space-around;
+  font-size: larger;
+  font-weight: bolder;
+  margin-top: 3rem;
+
+  position: sticky;
+  top: 0;
+  background-color:white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 88%;
 }
 .titleOfTable{
-    display: inline-flex;
-   align-items: center;
-   font-weight: bold;
-   margin-top: 1rem;
+  display: flex;
+  align-items: center;
 }
 table,td,th{
     border: 2px solid var(--secondaryLight);
@@ -175,6 +174,8 @@ table,td,th{
 }
 table{
     width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 th{
     background-color: var(--primaryGreen);
@@ -186,4 +187,48 @@ tr:nth-child(even){
 td{
     border: none;
 }
- 
+.titleOfChart{
+ text-align: center;
+ font-size: larger;
+ font-weight: bolder;
+
+}
+#myChart{
+  margin: 3rem auto 3rem auto;
+}
+.footerCols{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.footerSocialLinks{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.myFooter{
+  background-color: black;
+  color: var(--secondaryLight);
+}
+
+.fcol{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.footerTitle{
+  margin-bottom: 1rem;
+}
+.footerLink{
+  cursor: pointer;
+}
+.footerLink:hover{
+  color: var(--primaryGreen);
+}
+.fRights{
+  width: 100%;
+  text-align: center;
+}
