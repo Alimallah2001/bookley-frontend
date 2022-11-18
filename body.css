@@ -17,11 +17,11 @@ h1,h2,h4{
     
     height: 4rem;
 }
-hr{
+/* hr{
     width: 8rem;
     height: 0.1rem;
     background-color: black;
-}
+} */
 .top p{
     color: rgb(29, 33, 48,1);
 }
@@ -140,6 +140,17 @@ textarea{
     margin-top: 2rem;
 } */
 
+.titleContact{
+    display: flex;
+    align-items: center;
+}
+hr{
+    width: 8rem;
+    margin: 0 1rem;
+    height: 0.2rem;
+    background-color: #0B0706;
+    /* background-color: aqua; */
+ } 
 .middle input{
         
     border-style: solid;
