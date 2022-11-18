@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="body.css" >
-<script src="https://kit.fontawesome.com/4c5eb9a822.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="body.css">
+    <script src="https://kit.fontawesome.com/4c5eb9a822.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
-    <div class="navbar">
 
-    </div>
+<body>
+
     <div class="container">
         <div class="top">
             <div class="leftTop">
-                
+
                 <h4> CONTACT US</h4>
-                    <div class="paragraph">
-                <h1>We'd love to hear from you </h1>
-                <p>Have any question in mind or want to enquire? Please feel free to contact us through the form following details</p>
-                 </div>
+                <div class="paragraph">
+                    <h1>We'd love to hear from you </h1>
+                    <p>Have any question in mind or want to enquire? Please feel free to contact us through the form
+                        following details</p>
+                </div>
             </div>
             <div class="rightTop">
                 <h2>Let's talk!</h2>
@@ -31,56 +32,90 @@
                 <br>
                 <h2>Headoffice</h2>
                 <p>ESA Coding Lab</p>
-                <p>Mahmoud  Fakih Street</p>
+                <p>Mahmoud Fakih Street</p>
                 <p>Institut Francais du Liban</p>
                 <p>Nabatieh</p>
                 <div class="branch">
                     <div class="branch-1">
-                       <h2>Branch office 1</h2>
-                       <p>Institut Francais du Liban</p>
-                       <p>Nabatieh</p>
+                        <h2>Branch office 1</h2>
+                        <p>Institut Francais du Liban</p>
+                        <p>Nabatieh</p>
                     </div>
                     <div class="branch-2">
                         <h2>Branch office 2</h2>
-                       <p>Institut Francais du Liban</p>
-                       <p>Beirut</p>
+                        <p>Institut Francais du Liban</p>
+                        <p>Beirut</p>
                     </div>
-               </div>
+                </div>
 
-               <div class="footerSocialLinks">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
+                <div class="footerSocialLinks">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
                 </div>
             </div>
         </div>
         <div class="middle">
-           
-            <div class="leftMiddle">
-                <form method="" action="">
-                    <p>First Name</p>
-                    <input type="text" required  name="firstName">
-                    <p>E-mail</p>
-                    <input type="email" required name="EmailId"> 
-            </div>
-            <div class="rightMiddle">             
+            <form method="" action="" name="myForm"  >
+            <div class="topInput">
+                <p>First Name</p>
+                <p class="validation">Please enter a correct first name</p>
+                <input type="text"  name="firstName">
                 <p>Last Name</p>
-                <input type="text" required name="lastName">
-                <p>Subject</p>
-                <input type="text" required name="subject">         
+                <p class="validation">Please enter a correct last name</p>
+                <input type="text"  name="lastName">
             </div>
+            <div class="bottomInput">
+                <p>E-mail</p>
+                <p class="validation">Please enter your email </p>
+                <input type="email"  name="email">
+                <p>Subject</p>
+                <input type="text"  name="subject">
+            </div>
+           
         </div>
         <div class="messages">
             <p>Messages</p>
-            <textarea placeholder="type your messages" name="textarea"></textarea>
+            <p class="validation">Please enter your messages</p>
+            <textarea placeholder="type your messages" name="messages" ></textarea>
         </div>
-        <input type="submit" value="Send Messages" name="submit" class="button">
+        <div class="button-loc">
+        <input type="button" onclick="validateForm()"   value="Send Messages" name="submit" class="button">
+       </div>
     </form>
-       
-            <img alt="photo-map" src="C:\Users\user\Pictures\Screenshots\Screenshot (35).png">
-        </div>
-       
-    </div>
+        <img alt="photo-map" src="C:\Users\user\Pictures\Screenshots\Screenshot (35).png">
+
+    
+    
+    <script>
+         function validateForm(){
+            // e.preventDefault();
+            let fn=document.forms["myForm"]["firstName"].value;
+            let ln=document.forms["myForm"]["lastName"].value;
+            let em=document.forms["myForm"]["email"].value;
+            let ms=document.forms["myForm"]["messages"].value;
+            if(fn=="" ||isNaN("firstName")){
+                document.getElementsByClassName('validation')[0].style.display='inline-block';
+                document.getElementsByClassName('validation')[0].style.color='red';
+            }
+            if(ln=="" ||isNaN("lastName")){
+                document.getElementsByClassName('validation')[1].style.display='inline-block';
+                document.getElementsByClassName('validation')[1].style.color='red';
+            }
+            if(em==""){
+                document.getElementsByClassName('validation')[2].style.display='inline-block';
+                document.getElementsByClassName('validation')[2].style.color='red';
+            }
+             if(ms==""){
+                document.getElementsByClassName('validation')[3].style.display='inline-block';
+                document.getElementsByClassName('validation')[3].style.color='red';
+            }
+             
+        }
+    </script>
+    
+    </body>
 </body>
+
 </html>

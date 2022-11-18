@@ -80,7 +80,7 @@ li{
     display: inline-block;
     padding: 1.5rem 2rem 1.5rem 0rem;
 }
-.middle{
+/* .middle{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -130,11 +130,91 @@ textarea{
         border:0;
         border-radius: 1rem;
         color: aliceblue;
+} */
+/* .middle{
+    display: flex;
+  
+    justify-content: space-evenly; 
+    align-items: center;
+    flex-wrap: wrap ;
+    margin-top: 2rem;
+} */
+
+.middle input{
+        
+    border-style: solid;
+     border-color: black;
+      border-width: 0rem 0rem 0.1rem 0rem;
+
+      width: 17rem;
+      height: 1.3rem;
+      margin: 1rem 0rem 1rem 0rem;
+
 }
-
-
-
-
-
-
+.middle p{
+    margin-top: 2rem;
+    font-weight: bolder;
+    font-size: large;
+}
+input:focus ,textarea:focus {
+   outline: none;
+}
+.messages{
+    padding-bottom: 2rem;
+    /* text-align: center; */
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.messages p{
+    margin-top: 2rem;
+    font-weight: bolder;
+    font-size: large;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+textarea{
+    resize: none;
+    width: 60%;
+    height: 7rem;
+}
+.button{
+    width: 9rem;
+    height: 2rem;
+    text-align: center;
+    background-color: #70C174;
+    border:0;
+    border-radius: 1rem;
+    color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button-loc{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.topInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.bottomInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.validation{
+    display: none;
+}
 
